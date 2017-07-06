@@ -1,0 +1,9 @@
+Package: iamsshsync
+Version: 1.0-1
+Section: base
+Priority: optional
+Architecture: amd64
+Depends: openssh-server
+Maintainer: Gregory A. Lussier <greg@smooch.io>
+Description: Synchronizes keys from IAM users to EC2 instances.
+  The source comes from: https://github.com/sportebois/aws-ec2-ssh-sync

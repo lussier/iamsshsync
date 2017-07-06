@@ -1,0 +1,3 @@
+#!/bin/bash
+rm /etc/ssh/sshd_config
+dpkg-divert --remove --package iamsshsync --rename /etc/ssh/sshd_config
