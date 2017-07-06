@@ -6,7 +6,7 @@ iamsshsync synchronizes IAM users and their CodeCommit SSH keys to your EC2 inst
 
 * It's **not production ready**.
 * It gives all users sudo access.
-* It doesnt't filter users in IAM: it adds all of them.
+* It doesn't filter users in IAM: it adds all of them.
 
 ## Prerequisites
 
