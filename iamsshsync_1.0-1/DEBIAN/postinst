@@ -1,8 +1,0 @@
-#!/bin/sh
-cp /etc/ssh/sshd_config /etc/ssh/sshd_config.iamsshsync
-dpkg-divert --add --package iamsshsync --rename /etc/ssh/sshd_config
-cp /etc/ssh/sshd_config.iamsshsync /etc/ssh/sshd_config
-rm /etc/ssh/sshd_config.iamsshsync
-echo -e "\nAuthorizedKeysCommand /opt/authorized_keys_command.sh" >> /etc/ssh/sshd_config
-echo -e "\nAuthorizedKeysCommandUser nobody" >> /etc/ssh/sshd_config
-service ssh reload
